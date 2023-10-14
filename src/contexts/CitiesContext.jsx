@@ -6,7 +6,8 @@ import {
   useCallback,
 } from "react";
 
-const BASE_URL = "http://localhost:9000";
+// const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://json-server-ww.glitch.me";
 
 const CitiesContext = createContext();
 

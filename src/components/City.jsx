@@ -12,7 +12,7 @@ const flagemojiToPNG = (flag) => {
   return (
     <img src={`https://flagcdn.com/24x18/${countryCode}.png`} alt="flag" />
   );
-}
+};
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -42,7 +42,7 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{flagemojiToPNG(emoji)}</span> {cityName}
+          <span>{emoji ? flagemojiToPNG(emoji) : emoji}</span> {cityName}
         </h3>
       </div>
 
